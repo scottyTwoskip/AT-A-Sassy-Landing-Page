@@ -1,0 +1,25 @@
+@import "utilities";
+@import "config";
+
+%btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+
+  &:hover {
+    transform: scale(0.8);
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: #2b2ba5; 
+  color: white; 
+}
+
+.btn-secondary {
+  @extend %btn;
+  background-color: #3e9ce0;
+  color: white; 
+}
